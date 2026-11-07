@@ -4,352 +4,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Study Point - Your Daily Dose of Learning</title>
-
-<meta name="description" content="Study Point पर Railway और SSC की हिंदी में तैयारी करें। Maths, Reasoning, GK, Science और Study Notes।">
+<meta name="description" content="Study Point - Railway और SSC की तैयारी Hindi और English में।">
+<meta name="robots" content="index, follow">
+<title>Study Point | Railway & SSC Exam Preparation</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #f3f6fb;
-    color: #222;
-}
-
-header {
-    background: #123b70;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 32px;
-}
-
-header p {
-    color: #ffd166;
-    margin-top: 5px;
-}
-
-nav {
-    background: #0b2850;
-    padding: 12px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 8px;
-    font-weight: bold;
-}
-
-.hero {
-    background: linear-gradient(135deg,#1769aa,#123b70);
-    color: white;
-    padding: 35px 15px;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 27px;
-    margin-bottom: 12px;
-}
-
-.search {
-    margin: 20px auto;
-    max-width: 500px;
-    display: flex;
-}
-
-.search input {
-    width: 100%;
-    padding: 13px;
-    border: none;
-    border-radius: 8px 0 0 8px;
-}
-
-.search button {
-    padding: 13px 20px;
-    border: none;
-    background: #ffad35;
-    font-weight: bold;
-    border-radius: 0 8px 8px 0;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-}
-
-h2.section {
-    color: #123b70;
-    margin: 25px 0 15px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-    gap: 15px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px #00000010;
-    border: 1px solid #e5eaf0;
-}
-
-.card h3 {
-    color: #1769aa;
-    margin-bottom: 10px;
-}
-
-.card p {
-    color: #555;
-}
-
-.card a {
-    display: inline-block;
-    margin-top: 12px;
-    color: #1769aa;
-    font-weight: bold;
-}
-
-.exam {
-    display: inline-block;
-    background: #e2edff;
-    color: #123b70;
-    padding: 10px 15px;
-    border-radius: 25px;
-    margin: 5px;
-    font-weight: bold;
-}
-
-.ad {
-    min-height: 90px;
-    background: #e9edf3;
-    border: 1px dashed #9aa9bb;
-    margin: 25px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #68788a;
-    text-align: center;
-    padding: 15px;
-}
-
-footer {
-    background: #123b70;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 30px;
-}
-
-footer a {
-    color: #ffd166;
-    margin: 8px;
-}
-
-.hidden {
-    display: none;
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f6fb;color:#18324b}
+header{background:#102a43;color:white;padding:20px;text-align:center}
+header h1{margin:0;font-size:30px}
+nav{padding:14px;text-align:center;background:#1769aa}
+nav a{color:white;text-decoration:none;margin:10px;font-weight:bold}
+button{padding:11px 15px;background:#f4b942;border:0;border-radius:8px;font-weight:bold;cursor:pointer}
+main{max-width:1000px;margin:auto;padding:20px}
+.hero{background:white;padding:25px;border-radius:15px;text-align:center}
+.hero h2{color:#1769aa;font-size:30px}
+.search{width:100%;padding:13px;border:1px solid #ccc;border-radius:10px;margin:20px 0;font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card{background:white;border-radius:14px;padding:20px;box-shadow:0 3px 12px #0001}
+.card h3{color:#1769aa}
+.card p{line-height:1.6}
+section{margin:30px 0}
+.quiz{background:white;padding:20px;border-radius:14px}
+.option{display:block;width:100%;margin:8px 0;background:#eaf4ff;text-align:left}
+footer{background:#102a43;color:white;text-align:center;padding:22px}
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>📘 Study Point</h1>
-    <p>Your Daily Dose of Learning</p>
+<h1>📘 Study Point</h1>
+<p data-hi="आपकी पढ़ाई, आपकी सफलता" data-en="Your Learning, Your Success">
+आपकी पढ़ाई, आपकी सफलता
+</p>
+<button onclick="changeLanguage()">English / हिंदी</button>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#railway">Railway</a>
-    <a href="#ssc">SSC</a>
-    <a href="#subjects">Subjects</a>
-    <a href="#practice">Practice</a>
+<a href="#railway">Railway</a>
+<a href="#ssc">SSC</a>
+<a href="#subjects" data-hi="विषय" data-en="Subjects">विषय</a>
+<a href="#quiz">Quiz</a>
 </nav>
 
-<section class="hero" id="home">
-    <h2>Railway और SSC की तैयारी अब आसान!</h2>
-    <p>Hindi Study Notes | GK | Maths | Reasoning | Science</p>
+<main>
 
-    <form class="search" onsubmit="searchContent(event)">
-        <input id="searchBox" placeholder="यहाँ अपना विषय खोजें...">
-        <button type="submit">Search</button>
-    </form>
-</section>
-
-<div class="container">
-
-    <div class="ad">
-        Advertisement Space
-    </div>
-
-    <h2 class="section" id="railway">🚆 Railway Study Material</h2>
-
-    <div class="cards">
-
-        <div class="card searchable">
-            <h3>RRB NTPC</h3>
-            <p>NTPC के लिए GK, Maths और Reasoning की तैयारी।</p>
-            <a href="#subjects">Study Material →</a>
-        </div>
-
-        <div class="card searchable">
-            <h3>RRB Group D</h3>
-            <p>Group D के महत्वपूर्ण प्रश्न और नोट्स।</p>
-            <a href="#practice">Practice Questions →</a>
-        </div>
-
-        <div class="card searchable">
-            <h3>RRB ALP</h3>
-            <p>ALP परीक्षा के लिए General Science और Maths।</p>
-            <a href="#subjects">Study Material →</a>
-        </div>
-
-    </div>
-
-    <h2 class="section" id="ssc">🎯 SSC Study Material</h2>
-
-    <div class="cards">
-
-        <div class="card searchable">
-            <h3>SSC CGL</h3>
-            <p>SSC CGL की तैयारी के लिए महत्वपूर्ण विषय।</p>
-        </div>
-
-        <div class="card searchable">
-            <h3>SSC CHSL</h3>
-            <p>CHSL के लिए GK, Maths और Reasoning।</p>
-        </div>
-
-        <div class="card searchable">
-            <h3>SSC GD / MTS</h3>
-            <p>SSC GD और MTS के अभ्यास प्रश्न।</p>
-        </div>
-
-    </div>
-
-    <h2 class="section" id="subjects">📚 Subjects</h2>
-
-    <div class="cards">
-
-        <div class="card searchable">
-            <h3>🧮 Mathematics</h3>
-            <p>Percentage, Ratio, Profit Loss, Time Work।</p>
-        </div>
-
-        <div class="card searchable">
-            <h3>🧠 Reasoning</h3>
-            <p>Series, Coding Decoding, Analogy, Puzzle।</p>
-        </div>
-
-        <div class="card searchable">
-            <h3>🌍 General Knowledge</h3>
-            <p>इतिहास, भूगोल, संविधान और सामान्य ज्ञान।</p>
-        </div>
-
-        <div class="card searchable">
-            <h3>🔬 General Science</h3>
-            <p>Physics, Chemistry और Biology के Notes।</p>
-        </div>
-
-        <div class="card searchable">
-            <h3>📰 Current Affairs</h3>
-            <p>महत्वपूर्ण समसामयिक घटनाएँ।</p>
-        </div>
-
-        <div class="card searchable">
-            <h3>📝 Previous Year Questions</h3>
-            <p>पिछली परीक्षाओं के प्रश्नों का अभ्यास।</p>
-        </div>
-
-    </div>
-
-    <h2 class="section" id="practice">✍️ Practice Questions</h2>
-
-    <div class="card searchable">
-        <h3>प्रश्न 1: 200 का 15% कितना होगा?</h3>
-        <details>
-            <summary>उत्तर देखें</summary>
-            <p>उत्तर: 30</p>
-        </details>
-    </div>
-
-    <div class="card searchable" style="margin-top:15px">
-        <h3>प्रश्न 2: भारत की राजधानी क्या है?</h3>
-        <details>
-            <summary>उत्तर देखें</summary>
-            <p>उत्तर: नई दिल्ली</p>
-        </details>
-    </div>
-
-    <div class="ad">
-        Advertisement Space
-    </div>
-
-    <h2 class="section">ℹ️ About Study Point</h2>
-
-    <div class="card">
-        <p>
-        Study Point एक educational website है।
-        यहाँ Railway और SSC की तैयारी के लिए हिंदी में
-        Study Notes, GK, Maths, Reasoning और Science
-        उपलब्ध कराने का उद्देश्य है।
-        </p>
-    </div>
-
-    <h2 class="section">📩 Contact Us</h2>
-
-    <div class="card">
-        <p>Contact Email: अपना ईमेल यहाँ जोड़ें</p>
-    </div>
-
+<div class="hero">
+<h2 data-hi="आज की मेहनत, कल की सफलता!" data-en="Study Today. Succeed Tomorrow!">
+आज की मेहनत, कल की सफलता!
+</h2>
+<p data-hi="Railway और SSC परीक्षाओं की तैयारी अब एक ही जगह।"
+data-en="Prepare for Railway and SSC examinations in one place.">
+Railway और SSC परीक्षाओं की तैयारी अब एक ही जगह।
+</p>
 </div>
 
+<input class="search" id="search" placeholder="विषय खोजें / Search Subjects" oninput="searchCards()">
+
+<section id="railway">
+<h2>🚆 Railway Exam Preparation</h2>
+<div class="grid">
+<div class="card">
+<h3>RRB NTPC</h3>
+<p>NTPC CBT 1 और CBT 2 की तैयारी।</p>
+</div>
+<div class="card">
+<h3>RRB Group D</h3>
+<p>Maths, Reasoning, GK और Science अभ्यास।</p>
+</div>
+<div class="card">
+<h3>ALP & Technician</h3>
+<p>Railway technical examinations की तैयारी।</p>
+</div>
+</div>
+</section>
+
+<section id="ssc">
+<h2>🏛️ SSC Exam Preparation</h2>
+<div class="grid">
+<div class="card"><h3>SSC CGL</h3><p>Graduate level examination practice.</p></div>
+<div class="card"><h3>SSC CHSL</h3><p>10+2 level exam preparation.</p></div>
+<div class="card"><h3>SSC MTS / GD</h3><p>General subjects और practice questions.</p></div>
+</div>
+</section>
+
+<section id="subjects">
+<h2>📚 Subjects / विषय</h2>
+<div class="grid searchable">
+<div class="card"><h3>🌍 GK / सामान्य ज्ञान</h3><p>History, Geography, Polity, Current Affairs.</p></div>
+<div class="card"><h3>➗ Mathematics / गणित</h3><p>Percentage, Ratio, Profit-Loss, Time & Distance.</p></div>
+<div class="card"><h3>🧠 Reasoning / रीजनिंग</h3><p>Series, Coding-Decoding, Analogy, Puzzles.</p></div>
+<div class="card"><h3>🔬 General Science</h3><p>Physics, Chemistry, Biology.</p></div>
+<div class="card"><h3>📖 Hindi / हिंदी</h3><p>Grammar, पर्यायवाची, विलोम, मुहावरे।</p></div>
+<div class="card"><h3>🔤 English</h3><p>Grammar, Vocabulary, Comprehension.</p></div>
+</div>
+</section>
+
+<section id="quiz">
+<h2>📝 Quick Quiz</h2>
+<div class="quiz">
+<h3>भारत का संविधान कब लागू हुआ?</h3>
+<button class="option" onclick="check(false)">15 अगस्त 1947</button>
+<button class="option" onclick="check(true)">26 जनवरी 1950</button>
+<button class="option" onclick="check(false)">26 नवंबर 1949</button>
+<p id="result"></p>
+</div>
+</section>
+
+<section>
+<h2>🔐 Security & Information</h2>
+<div class="card">
+<p>Study Point uses GitHub Pages HTTPS hosting.</p>
+<p>यह वेबसाइट educational purpose के लिए है।</p>
+<p>Official Railway और SSC notifications संबंधित official websites से verify करें।</p>
+</div>
+</section>
+
+</main>
+
 <footer>
-    <h3>Study Point</h3>
-    <p>Your Daily Dose of Learning</p>
-    <p>© 2026 Study Point</p>
-    <p>
-        <a href="#home">Home</a>
-        <a href="#subjects">Subjects</a>
-        <a href="#railway">Railway</a>
-        <a href="#ssc">SSC</a>
-    </p>
+<h3>Study Point</h3>
+<p>Learn • Practice • Succeed</p>
+<p>© 2026 Study Point</p>
 </footer>
 
 <script>
-function searchContent(event) {
-    event.preventDefault();
+let lang="hi";
 
-    let query = document.getElementById("searchBox")
-        .value.toLowerCase();
+function changeLanguage(){
+lang=lang==="hi"?"en":"hi";
+document.documentElement.lang=lang;
+document.querySelectorAll("[data-hi][data-en]").forEach(el=>{
+el.textContent=el.dataset[lang];
+});
+}
 
-    let cards = document.querySelectorAll(".searchable");
+function searchCards(){
+let q=document.getElementById("search").value.toLowerCase();
+document.querySelectorAll(".searchable .card").forEach(card=>{
+card.style.display=card.textContent.toLowerCase().includes(q)?"":"none";
+});
+}
 
-    cards.forEach(function(card) {
-        let text = card.innerText.toLowerCase();
-
-        if (text.includes(query)) {
-            card.classList.remove("hidden");
-        } else {
-            card.classList.add("hidden");
-        }
-    });
+function check(correct){
+document.getElementById("result").textContent=
+correct?"✅ सही उत्तर! Correct Answer!":"❌ गलत उत्तर। Try Again!";
 }
 </script>
 
